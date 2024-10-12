@@ -1,0 +1,139 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.dropdown .dropdown-content{
+    right: 0;
+    top: 30px;
+}
+.bg_image{
+    background-image: url('./images/pet.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.secton_common_width{
+    width: 95%;
+}
+.category_btn{
+    width: 240px;
+    height: 70px;
+}
+.category_btn:hover{
+    background-color: #0E7A811A;
+}
+.buttons{
+    border: 1px solid #aaaaaaaf;
+    border-radius: 6px;
+    display: block;
+    padding: 6px 16px;
+    text-align: center;
+}
+#like_btn:hover{
+    border: 1px solid #0E7A81;
+    color: #0E7A81;
+}
+#detail_btn:hover, #adopt_btn:hover{
+    background-color: #0E7A81;
+    color: #FFF;
+}
+#append_image{
+    max-height: 420px;
+}
+.absolute{
+    right: 0;
+}
+.active_btn{
+    background-color: #0E7A811A;
+    border: 2px solid #0E7A81;
+    border-radius: 40px !important;
+}
+.modal-box{
+    max-width: 700px !important;
+}
+
+@media screen and (min-width: 270px) and (max-width: 639px) {
+    .user_icon{
+        display: none;
+    }
+    .menu{
+        display: none !important;
+    }
+    .bg_image{
+        height: 270px;
+    }
+    .text_sml{
+        font-size: 3rem !important;
+    }
+    .sm_layout{
+        display: grid !important;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+    .ext_smlcard_container{
+        flex-wrap: wrap;
+    }
+    .extsml_sort_btn{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 25px;
+    }
+    .ext_smlcard{
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .card_img{
+        height: auto !important;
+    }
+    .modal{
+        width: 95% !important;
+        margin: auto !important;
+    }
+    .sml_padding_figer{
+        padding: 0 !important;
+    }
+    .sml_padding{
+        padding: 12px 8px 8px 8px !important;
+    }
+    .sml_card{
+        width: 95%;
+        margin: auto;
+    }
+    .modal_card{
+        display: grid !important;
+        margin-top: 25px !important;
+        border-bottom: 1px solid #ccc;
+    }
+    .sml_padding{
+        padding: 6px !important;
+    }
+    .sml_grid{
+        display: grid !important;
+    }
+    .full_width{
+        width: auto !important;
+    }
+    .modal_card_icon{
+        display: grid;
+    }
+    .sml_modal_width{
+        width: 90% !important;
+    }
+    .sml_modal_width h3{
+        font-size: 30px;
+    }
+    .sml_width{
+        width: 100%;
+    }
+    .sml_apend_img{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .extrasml_footer_layout{
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+}
