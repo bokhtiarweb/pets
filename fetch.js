@@ -127,7 +127,7 @@ function displayAllCategory(petCategory){
 <div id="adopt_modal_${item.petId}" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
 <div class="bg-white p-6 rounded shadow-lg text-center sml_modal_width">
     <p class="text-4xl">
-    <img src='../images/22f42c11b612b041b4038573dca18a2d.gif' class='w-[150px] h-[150px] mx-auto' alt='Handshake'/>
+    <img src='./images/22f42c11b612b041b4038573dca18a2d.gif' class='w-[150px] h-[150px] mx-auto' alt='Handshake'/>
     </p>
     <h3 class="text-5xl font-bold">Congrates</h3>
     <p class="py-4 text-xl font-bold">
