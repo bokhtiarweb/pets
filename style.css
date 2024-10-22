@@ -40,9 +40,7 @@
     background-color: #0E7A81;
     color: #FFF;
 }
-#append_image{
-    max-height: 420px;
-}
+
 .absolute{
     right: 0;
 }
@@ -127,9 +125,12 @@
     .sml_width{
         width: 100%;
     }
+    .small_layout{
+        margin: auto;
+    }
     .sml_apend_img{
         flex-wrap: wrap;
-        justify-content: center;
+        margin: auto !important;
         gap: 25px;
     }
     .extrasml_footer_layout{

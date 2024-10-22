@@ -89,13 +89,13 @@ function displayAllCategory(petCategory){
     petCategory?.length ? petCategory.forEach((item) => {
 // ============= Card ui start here==============
         const card = document.createElement('div');
-        card.classList = `lg:w-[auto] shadow-xl rounded-xl border sml_card`;
+        card.classList = `shadow-xl rounded-xl border sml_card`;
         card.innerHTML = `
             <figure class="px-6 pt-6 sml_padding_figer">
             <img
                 src="${item.image}"
                 alt="Image"
-                class="rounded-xl w-full h-[160px] md:h-[190px] sm:h-[230px] card_img" />
+                class="rounded-xl w-full h-[160px] md:h-[220px] sm:h-[290px] card_img" />
             </figure>
             <div class="lg:w-[auto] p-6 grid sml_padding">
             <h2 class="text-2xl font-extrabold mb-2">${item.pet_name}</h2>
@@ -124,10 +124,10 @@ function displayAllCategory(petCategory){
 
                 <button id="adopt_btn_${item.petId}" onclick="adoptModal('${item.petId}')" class="buttons text-[#0E7A81] font-bold">Adopt</button>
     <!-- ==========adopt btn modal start here========== -->
-<div id="adopt_modal_${item.petId}" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+<div id="adopt_modal_${item.petId}" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
 <div class="bg-white p-6 rounded shadow-lg text-center sml_modal_width">
     <p class="text-4xl">
-    <img src='https://i.pinimg.com/originals/20/95/b0/2095b0ee0ff14085277df3b037075b6e.gif' class='w-[150px] h-[150px] mx-auto' alt='Shandshake'/>
+    <img src='../images/22f42c11b612b041b4038573dca18a2d.gif' class='w-[150px] h-[150px] mx-auto' alt='Handshake'/>
     </p>
     <h3 class="text-5xl font-bold">Congrates</h3>
     <p class="py-4 text-xl font-bold">
@@ -227,7 +227,7 @@ function appendImage(img) {
     imgContainer.classList.remove('hidden');
 
     const createDiv = document.createElement('div');
-    createDiv.classList = `lg:w-[45%] h-[170px] rounded-xl border img_box`;
+    createDiv.classList = `lg:h-[170px] md:h-[230px] rounded-xl img_box`;
     createDiv.innerHTML = `
         <div class="w-[100%] h-[100%] relative">
             <span id="absolute" onclick="closeImage(this)" class="absolute">

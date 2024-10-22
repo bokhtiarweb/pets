@@ -115,9 +115,9 @@
         </div>
     </header>
 
-    <main class="py-8">
+    <main class="w-[95%] mx-auto py-8">
         <!-- Category section -->
-        <section id="cat_section" class="w-[95%] mx-auto">
+        <section id="cat_section">
             <div class="lg:w-[50%] md:w-[100%] mx-auto text-center">
                 <h2 class="text-3xl font-bold">Adopt  Your  Best Friend</h2>
                 <p class="text-LightText mt-3">
@@ -133,36 +133,29 @@
         <!-- card section start -->
         <section class="py-8">
 
-            <div class="w-[95%] mx-auto">
-                <div class="flex md:flex-wrap sm:flex-wrap lg:justify-between justify-around items-center extsml_sort_btn">
-                    <h2 class="text-lg font-bold">Best Deal For you</h2>
-                    <button onclick="sortByPrice()" class="btn bg-[#0E7A81] text-[#fff] text-lg disabled">Sort by Price</button>
-                </div>
+            <div class="flex md:flex-wrap sm:flex-wrap lg:justify-between justify-around items-center extsml_sort_btn">
+                <h2 class="text-lg font-bold">Best Deal For you</h2>
+                <button onclick="sortByPrice()" class="btn bg-[#0E7A81] text-[#fff] text-lg disabled">Sort by Price</button>
+            </div>
 
 <!-- =========== LOADING BUTTON IS HERE=== -->                               
 <div id="loader" class="hidden mt-12 text-center">
     <span class="loading loading-bars loading-lg"></span>
 </div>
 
-                <!-- continer start -->
-                <div class="lg:flow-root flex md:flex-wrap sm:flex-wrap justify-between mt-8 ext_smlcard_container gap-8">
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-                <!-- left card container start -->
-                    <!-- <div id="cards_box" class="lg:w-[65%] flex md:flex-wrap sm:flex-wrap lg:justify-between md:justify-center md:gap-6 sm:gap-6 ext_smlcard"> -->
-                    <div id="cards_box" class="lg:float-left lg:w-[65%] md:w-[100%] grid lg:grid-cols-3 md:grid-cols-2 md:gap-6 sm:gap-6 sm:w-[80%] sm:mx-auto ext_smlcard"> 
-
-<!-- ===============card showing here=========== -->
-
+                    <div class="col-span-2">
+                        <div id="cards_box" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- ===============card showing here=========== -->
+                        </div>
                     </div>
-                    <!-- left card container end -->
-                    
-                    <!-- right side container start -->
-                    <div id="append_image" class="lg:float-right lg:w-[31.6%] md:w-[100%] sm:w-[100%] flex md:flex-wrap sm:flex-wrap md:gap-6 sm:gap-6 justify-between p-6 overflow-auto border rounded-lg sml_apend_img hidden">
-                        <!-- images append here -->
+
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <div id="append_image" class="h-fit grid sm:grid-cols-1 md:grid-cols-2 justify-around items-center p-4 gap-3 sm:mt-10 md:mt-10 lg:mt-0 border rounded-lg sml_apend_img hidden">
+                            <!-- images append here -->
+                        </div>
                     </div>
-                    <!-- right side container end -->
-                </div>
-                <!-- container end -->
                 </div>
             </div>
         </section>
